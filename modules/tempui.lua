@@ -4821,7 +4821,7 @@ function library:CreateSettingsTab(menu)
         end
     end
 
-    configSection:AddButton({text = 'lLoad', confirm = true, callback = function()
+    configSection:AddButton({text = 'load', confirm = true, callback = function()
         library:LoadConfig(library.flags.selectedconfig);
     end}):AddButton({text = 'save', confirm = true, callback = function()
         library:SaveConfig(library.flags.selectedconfig);
